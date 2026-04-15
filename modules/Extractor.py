@@ -24,9 +24,15 @@ class DataExtractor(Extractor):
             "apple_data.default.customer_updated"
         ).get_dataframe()
 
+        product_df = get_data_source(
+            "csv",
+            "/Volumes/apple_data/default/files/Products_Updated.csv"
+        ).get_dataframe()
+
         input_df = {
             "transactionInputDF": transactionInputDF,
-            "customer_df" : customer_df
+            "customer_df" : customer_df,
+            "product_df" : product_df
         }
 
         return input_df

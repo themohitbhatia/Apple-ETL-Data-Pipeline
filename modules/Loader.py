@@ -32,3 +32,13 @@ class ExclusiveIphoneAirpodsLoader(AbstractLoader):
             method = "overwrite",
             params = params
         ).load_dataframe()
+
+class CategoryProductLeaderboardLoader(AbstractLoader):
+
+    def sink(self):
+        get_sink_source(
+            sink_type = "file",
+            df = self.transformed_df,
+            path = "/Volumes/apple_data/default/output/CategoryProductLeaderboardLoader",
+            method = "overwrite"
+        ).load_dataframe()
