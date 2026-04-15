@@ -10,6 +10,8 @@ The project provides solutions to two primary business questions:
 
 2. Exclusivity Analysis (Segment Discovery): Identify customers who have exclusively bought iPhones and AirPods and no other products from the catalog.
 
+3. Category Leaderboard (Performance Tracking): Identifies the top 3 best-selling products within each category. This helps pinpoint high-performing items across diverse product segments.
+
 ## 🏗️ Architecture & Design
 The project follows a modular class-based structure:
 The project follows a Modular ETL Architecture decoupled by the Factory Design Pattern. This design ensures that the pipeline is highly extensible, allowing for different data sources or sinks to be added without modifying the core business logic.
